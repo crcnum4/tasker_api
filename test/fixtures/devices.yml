@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uuid: MyString
+  model: MyString
+  token: MyString
+  confirmed: false
+  name: MyString
+
+two:
+  uuid: MyString
+  model: MyString
+  token: MyString
+  confirmed: false
+  name: MyString
