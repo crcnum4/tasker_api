@@ -6,7 +6,7 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def update_list
     def render_error(message)
-      @json = {:status => "error", :message => message}
+      @json = {:status => {:status => "error"}, :message => message}
       render json: @json, status: :unprocessable_entity
     end
     
@@ -170,7 +170,7 @@ class TasksController < ApplicationController
             @task = Task.new(name: params[:name], description: params[:description], complete: false, user_id: @user.id)
             if @task.save
               @json = {:status => "success", :id => "#{@task.id}"}
-              render json: @json, status: :unprocessable_entity
+              render json: @json
             end
           else
             #user not found
