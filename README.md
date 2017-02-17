@@ -51,3 +51,7 @@ POST '/tasks?token=?&name=?&description=? - creates a new task under the user_id
 
 <h2>API return values.</h2>
 All contain a status key of "success" or other value. Success can be treated as confirmation.
+
+<h2>Test server</h2>
+the api sometimes runs on https://rails-api-test-crcnum4.c9users.io/ however there may be times I'm running another api on this url and may not work
+if you want to run your own simply clone this and run the rails s command on your system (planning to maybe create a heroku instance for those interested)
